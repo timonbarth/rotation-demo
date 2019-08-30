@@ -1,3 +1,20 @@
-<p>
-rotation-demo works!
-</p>
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<h2>Listenansicht</h2>
+			<form>
+				Zähle von 0 bis <input type="number" name="ende" 
+                   [(ngModel)]="ende" class="form-control" />
+        <button class="btn btn-success" 
+          (click)="zaehle()">los!</button>
+      </form>
+     
+
+     <ul *ngFor="let zahl of list">
+       <li>{{zahl}}</li>
+     </ul>
+
+
+    </div>
+  </div>
+</div>
